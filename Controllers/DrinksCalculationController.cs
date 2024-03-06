@@ -24,7 +24,7 @@ namespace PartyCalculation.Controllers
     public ActionResult Calculate(DrinksModel drinksModel)
     {
 
-      var drm = drinksModel;
+   
       CalculateRequiredBottles calculateRequired = new CalculateRequiredBottles();
       DrinksModel calculatedData = calculateRequired.GetRequiredBottles(drinksModel);
       return RedirectToAction("Index", calculatedData);
