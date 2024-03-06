@@ -1,0 +1,91 @@
+﻿@model PartyCalculation.Models.DrinksModel
+
+@{
+    ViewBag.Title = "DrinksCalculation";
+    Layout = "~/Views/_ViewStart.cshtml";
+}
+
+<h2>DrinksCalculation</h2>
+
+<div>
+    <h4>DrinksModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LightDrinker)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LightDrinker)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AverageDrinker)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AverageDrinker)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HeavyDrinker)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HeavyDrinker)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LightDrinkerConsumptionPerHr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LightDrinkerConsumptionPerHr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HeavyDrinkerConsumptionPerHr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HeavyDrinkerConsumptionPerHr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AverageDrinkerConsumptionPerHr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AverageDrinkerConsumptionPerHr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalLightDrinkerConsumption)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalLightDrinkerConsumption)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalHeavyDrinkerConsumption)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalHeavyDrinkerConsumption)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalAverageDrinkerConsumption)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalAverageDrinkerConsumption)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
